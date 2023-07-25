@@ -1,22 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Util } from './Util';
 
 export function Utils() {
   return (
     <Wrapper>
       <UtilLists className="util">
-        <li>
-          <a href="#">
-            <UtilImage src="https://us.wink.co.kr/pc/renewalV3/common/login.png" alt="" />
-            <span>로그인</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <UtilImage src="https://us.wink.co.kr/pc/renewalV3/common/signup.png" alt="" />
-            <span>회원가입</span>
-          </a>
-        </li>
+        <Util
+          link="#"
+          imageSrc="https://us.wink.co.kr/pc/renewalV3/common/login.png"
+          desc="로그인"
+        />
+        <Util
+          link="#"
+          imageSrc="https://us.wink.co.kr/pc/renewalV3/common/signup.png"
+          desc="회원가입"
+        />
       </UtilLists>
     </Wrapper>
   );
@@ -38,15 +37,5 @@ const UtilLists = styled.ul`
   & a {
     display: flex;
     align-items: center;
-  }
-`;
-
-const UtilImage = styled.img`
-  width: 20px;
-  height: 22px;
-
-  & + span {
-    font-size: 15px;
-    padding-left: 8px;
   }
 `;
