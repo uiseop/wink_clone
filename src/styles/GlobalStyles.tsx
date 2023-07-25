@@ -102,6 +102,18 @@ const GlobalStyles = createGlobalStyle`
   :where(dialog:modal) {
     all: revert;
   }
+  
+  body {
+    height: 100%;
+    color: #666;
+    font-size: 16px;
+    font-family: 'NanumBarunGothic',sans-serif;
+    line-height: 1.6;
+    word-break: keep-all;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 `;
 
 export default GlobalStyles;
