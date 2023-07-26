@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import data from '@const/Navigation/data.json';
+import data from '@const/navigation.json';
 import { NavItem } from '@components/Header/NavItem';
 
 export function Navigation() {

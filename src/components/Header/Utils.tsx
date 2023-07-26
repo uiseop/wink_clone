@@ -1,21 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Util } from './Util';
+import utilData from '@const/utils.json';
 
 export function Utils() {
+  const { data } = utilData;
+
   return (
     <Wrapper>
       <UtilLists className="util">
-        <Util
-          link="#"
-          imageSrc="https://us.wink.co.kr/pc/renewalV3/common/login.png"
-          desc="로그인"
-        />
-        <Util
-          link="#"
-          imageSrc="https://us.wink.co.kr/pc/renewalV3/common/signup.png"
-          desc="회원가입"
-        />
+        {data.length
+          ? data.map(({ link, imageSrc, desc }) => {
+              return <Util key={desc} link={link} imageSrc={imageSrc} desc={desc} />;
+            })
+          : ''}
       </UtilLists>
     </Wrapper>
   );

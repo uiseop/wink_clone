@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "link": "#",
+      "imageSrc": "https://us.wink.co.kr/pc/renewalV3/common/login.png",
+      "desc": "로그인"
+    },
+    {
+      "link": "#",
+      "imageSrc": "https://us.wink.co.kr/pc/renewalV3/common/signup.png",
+      "desc": "회원가입"
+    }
+  ]
+}
