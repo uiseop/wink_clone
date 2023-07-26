@@ -5,6 +5,11 @@ module.exports = {
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+    },
   },
   module: {
     rules: [
