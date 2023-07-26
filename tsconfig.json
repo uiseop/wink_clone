@@ -14,7 +14,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@consts/*": ["consts/*"]
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
