@@ -1,10 +1,11 @@
 import React from 'react';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
+import { Header } from '@components/Header';
+import { Footer } from '@components/Footer';
+import { Wrap } from '@components/Wrap';
 
 export function ReferenceRoom() {
   return (
-    <div id="wrap">
+    <Wrap>
       <Header />
       <div>
         <div id="container">
@@ -483,6 +484,6 @@ export function ReferenceRoom() {
         </div>
       </div>
       <Footer />
-    </div>
+    </Wrap>
   );
 }

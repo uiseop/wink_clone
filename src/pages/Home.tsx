@@ -1,10 +1,11 @@
 import React from 'react';
 import { Header } from '@components/Header';
 import { Footer } from '@components/Footer';
+import { Wrap } from '@components/Wrap';
 
 function Home() {
   return (
-    <div id="wrap">
+    <Wrap>
       <Header />
       <div>
         <div id="mainContainer" className="new-wrapper">
@@ -644,7 +645,7 @@ function Home() {
         </div>
       </div>
       <Footer />
-    </div>
+    </Wrap>
   );
 }
 
