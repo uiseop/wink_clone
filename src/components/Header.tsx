@@ -13,5 +13,10 @@ export function Header() {
 }
 
 const Wrapper = styled.div`
+  display: inline-block;
   min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;

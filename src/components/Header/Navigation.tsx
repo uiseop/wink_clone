@@ -23,16 +23,16 @@ export function Navigation() {
           <NavItem link={'/'} data={data.home} />
         </li>
         <li className={location.pathname === '/study' ? 'current' : ''}>
-          <NavItem link={'/'} data={data.study} />
+          <NavItem link={'/study'} data={data.study} />
         </li>
         <li className={location.pathname === '/apply' ? 'current' : ''}>
-          <NavItem link={'/'} data={data.apply} />
+          <NavItem link={'/apply'} data={data.apply} />
         </li>
         <li className={location.pathname === '/reference' ? 'current' : ''}>
-          <NavItem link={'/'} data={data.reference} />
+          <NavItem link={'/reference'} data={data.reference} />
         </li>
         <li className={location.pathname === '/custom_service' ? 'current' : ''}>
-          <NavItem link={'/'} data={data.custom_service} />
+          <NavItem link={'/custom_service'} data={data.custom_service} />
         </li>
       </ul>
     </Nav>
@@ -97,10 +97,10 @@ const Nav = styled.nav`
           left: 45.5%;
           top: 10%;
         }
+      }
 
-        & > ul {
-          max-height: 400px;
-        }
+      &:hover > ul {
+        max-height: 400px;
       }
 
       & div {
