@@ -24,5 +24,6 @@ const UtilImage = styled.img`
   & + span {
     font-size: 15px;
     padding-left: 8px;
+    color: black;
   }
 `;
