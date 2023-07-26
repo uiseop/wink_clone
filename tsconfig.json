@@ -10,12 +10,13 @@
     "isolatedModules": true,
     "strict": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
-      "@consts/*": ["consts/*"]
+      "@const/*": ["const/*"]
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

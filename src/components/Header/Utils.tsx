@@ -23,16 +23,19 @@ export function Utils() {
 
 const Wrapper = styled.div`
   width: 1440px;
+  height: 80px;
   display: flex;
   justify-content: end;
 `;
 
 const UtilLists = styled.ul`
   display: flex;
+  position: relative;
   gap: 35px;
   align-items: center;
   margin-top: 27px;
   flex-wrap: wrap;
+  right: 85px;
 
   & a {
     display: flex;
